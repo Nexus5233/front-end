@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glow</title>
+    <style>
+       body{
+           background-color: #050210;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+
+       }
+
+       #circle{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 100%;
+            animation-name: circle;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: linear;  
+            animation-play-state: running;    
+        }
+
+        #circle:before{
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            z-index: -1;
+            background:linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+            filter: blur(40px);
+        }
+
+        #circle_in{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: #050210;
+        }
+
+        #circlea{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background-color:rgb(4, 4, 22);
+            animation-name: circlea;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes circle {
+            0%{
+                transform: rotate(360deg);
+            }             
+        }
+        @keyframes circlea {
+            0%{
+                transform: scale(0.1, 0.1);        
+            }
+            100%{
+                transform: scale(1, 1);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <div id="circle_in">
+            <div id="circlea">
+            </div>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
