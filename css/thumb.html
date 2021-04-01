@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumb</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        body>p{
+            margin-top: 30px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 50px;
+        
+        }
+
+        .box{
+            border-radius: 10px;
+            background-color:cornflowerblue;
+            text-align: center;
+        }
+        .box>p{
+            margin: 0 0;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: rgb(236, 227, 209);
+        }
+        
+
+        @media screen and (max-width: 768px) {
+            .grid{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+        }
+        @media screen and (max-width: 414px) {
+            .grid{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+        }
+       
+    </style>
+
+</head>
+
+<body>
+    <h1>Gallery Heading</h1>
+    <div class="grid">
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+        <div class="box"><img src="placeholder-image.png" alt="placeholder-image"><p>Image Title</p></div>
+
+        
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, odit, nostrum ab nam accusamus quod a quasi nemo reprehenderit unde, non sint earum ex corrupti nisi ducimus delectus velit? Totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, odit, nostrum ab nam accusamus quod a quasi nemo reprehenderit unde, non sint earum ex corrupti nisi ducimus delectus velit? Totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, odit, nostrum ab nam accusamus quod a quasi nemo reprehenderit unde, non sint earum ex corrupti nisi ducimus delectus velit? Totam.</p>
+    
+</body>
+</html>
